@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/f9d79f9fe4.js" crossorigin="anonymous"></script>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
+      a {
+        font-size: 13px;
+        color: #333;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        margin-top: 1rem;
+      }
+
+      header nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+
+      header nav ul li a {
+        margin: 1rem 0.8rem;
+      }
+
+      .apps {
+        color: #4c4c5b;
+        font-size: 1.25rem;
+        margin: 0;
+        padding: 0.7rem;
+      }
+
+      .apps:hover {
+        background-color: #f1f1f1;
+        border-radius: 25px;
+      }
+
+      .profile {
+        color: #4c4c5b;
+        font-size: 2rem;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      main div {
+        position: relative;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .search-icon {
+        position: absolute;
+        left: 5%;
+        top: 32%;
+        color: #bcbcbc;
+      }
+
+      .search-mic {
+        position: absolute;
+        font-size: 1rem;
+        right: 5%;
+        top: 32%;
+        color: #4387ee;
+      }
+
+      div input {
+        padding: 0.8rem 3rem;
+        width: 32vw;
+        font-size: 1rem;
+        border: 1px solid #f2f2f2;
+        border-radius: 25px;
+      }
+
+      div input:hover,
+      div input:focus {
+        box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+        outline: none;
+      }
+
+      .search-btn-group {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+      }
+
+      button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        margin: 0 0.5rem;
+        border: none;
+        outline: 1px solid #f2f2f2;
+        background-color: #f2f2f2;
+        border-radius: 2px;
+        transition: all 0.1s;
+      }
+
+      button:hover {
+        cursor: pointer;
+        outline: 1px solid #bcbcbc;
+        box-shadow: 0 1px 3px rgb(32 33 36 / 28%);
+      }
+
+      section {
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        margin-bottom: 10rem;
+      }
+
+      section a {
+        text-decoration: none;
+        color: #4387ee;
+        margin-right: 0.1rem;
+      }
+
+      footer {
+        background-color: #f2f2f2;
+        font-size: 14px;
+        color: #4c4c5b;
+      }
+
+      footer div {
+        padding: 1rem;
+      }
+
+      .line {
+        border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+        color: #666;
+      }
+
+      .last-footer {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-links {
+        color: #666;
+      }
+
+      .footer-links:not(:last-of-type) {
+        margin-right: 2rem;
+      }
+    </style>
+    <title>Google</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <ul>
+          <li><a href="#">Gmail</a></li>
+          <li><a href="#">Images</a></li>
+          <li>
+            <a class="apps" href="#"><i class="fas fa-th"></i></a>
+          </li>
+          <li>
+            <a class="profile" href="#"><i class="fas fa-user-circle"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google__logo" />
+
+      <div>
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" name="search" placeholder="" />
+        <a href="">
+          <i class="fas fa-microphone search-mic"></i>
+        </a>
+      </div>
+      <div class="search-btn-group">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+      </div>
+      <section>
+        Google offered in:
+        <a href="">Hindi</a>
+        <a href="">Bangla</a>
+        <a href="">Urdu</a>
+        <a href="">Marathi</a>
+        <a href="">Punjabi</a>
+      </section>
+    </main>
+    <footer>
+      <div class="line">
+        <div class="container">
+          <p class="country">India</p>
+        </div>
+      </div>
+
+      <div class="last-footer container">
+        <div>
+          <a class="footer-links" href="">About</a>
+          <a class="footer-links" href="">Advertising</a>
+          <a class="footer-links" href="">Business</a>
+          <a class="footer-links" href="">How Search Works</a>
+        </div>
+        <div>
+          <a class="footer-links" href="">Privacy</a>
+          <a class="footer-links" href="">Terms</a>
+          <a class="footer-links" href="">Settings</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
